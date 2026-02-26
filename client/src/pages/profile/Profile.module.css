@@ -1,0 +1,13 @@
+.layout { display:grid; grid-template-columns:220px 1fr; gap:16px; align-items:start; }
+.sidebar { padding:24px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:6px; }
+.bigAv   { width:64px; height:64px; background:var(--purple-bg); color:var(--purple2); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.25rem; font-weight:800; margin-bottom:4px; }
+.avName  { font-size:0.95rem; font-weight:700; }
+.avEmail { font-size:0.75rem; color:var(--w40); }
+.avUni   { font-size:0.75rem; color:var(--w40); margin-top:4px; }
+.tabNav  { width:100%; display:flex; flex-direction:column; gap:2px; margin-top:16px; padding-top:16px; border-top:1px solid var(--border); }
+.tabBtn  { display:flex; align-items:center; gap:8px; padding:8px 12px; border-radius:var(--r8); font-size:0.84rem; color:var(--w60); transition:var(--t); }
+.tabBtn:hover { background:var(--w06); color:var(--white); }
+.tabActive { background:var(--purple)!important; color:#fff!important; }
+.formCard  { padding:24px; }
+.formTitle { font-family:var(--font); font-size:1rem; font-weight:700; margin-bottom:18px; padding-bottom:14px; border-bottom:1px solid var(--border); }
+@media (max-width:640px) { .layout { grid-template-columns:1fr; } }

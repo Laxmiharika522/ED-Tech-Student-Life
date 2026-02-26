@@ -1,0 +1,298 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--white);
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--bg-card);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.sidebarOpen {
+    width: 260px;
+}
+
+.sidebarClosed {
+    width: 80px;
+}
+
+.sidebarHeader {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logoIcon {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, var(--purple1), var(--purple2));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.logoText {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.logoText b {
+    color: var(--purple2);
+}
+
+.toggleBtn {
+    background: none;
+    border: none;
+    color: var(--w40);
+    cursor: pointer;
+    padding: 4px;
+}
+
+.nav {
+    padding: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    color: var(--w60);
+    text-decoration: none;
+    transition: all 0.2s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.navLink:hover {
+    background-color: var(--w06);
+    color: var(--white);
+}
+
+.navLinkActive {
+    background-color: var(--purple-bg);
+    color: var(--purple2);
+}
+
+.navIcon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navLabel {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.sidebarClosed .navLabel,
+.sidebarClosed .logoText,
+.sidebarClosed .adminInfo {
+    display: none;
+}
+
+.sidebarFooter {
+    padding: 12px;
+    border-top: 1px solid var(--border);
+}
+
+.logoutBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    color: var(--red);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.logoutBtn:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Main Content Area */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.topBar {
+    height: 70px;
+    background-color: rgba(10, 10, 15, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: var(--w06);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 400px;
+    height: 42px;
+}
+
+.searchIcon {
+    color: var(--w40);
+}
+
+.searchInput {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 0.9rem;
+    width: 100%;
+    outline: none;
+}
+
+.topBarActions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconBtn {
+    background: none;
+    border: none;
+    color: var(--w60);
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.notificationDot {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--purple2);
+    border-radius: 50%;
+    border: 2px solid var(--bg);
+}
+
+.adminProfile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 20px;
+    border-left: 1px solid var(--border);
+}
+
+.adminInfo {
+    text-align: right;
+}
+
+.adminName {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.adminRole {
+    font-size: 0.75rem;
+    color: var(--w40);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: var(--w10);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--purple2);
+    border: 1px solid var(--border);
+}
+
+.content {
+    flex: 1;
+    padding: 32px;
+    overflow-y: auto;
+}
+
+.footer {
+    padding: 20px 32px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--w40);
+    font-size: 0.8rem;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.footerLinks a {
+    color: var(--w40);
+    text-decoration: none;
+}
+
+.footerLinks a:hover {
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .sidebarOpen {
+        position: fixed;
+        height: 100vh;
+    }
+
+    .topBar {
+        padding: 0 16px;
+    }
+
+    .searchBar {
+        display: none;
+    }
+}

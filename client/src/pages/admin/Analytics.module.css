@@ -1,0 +1,211 @@
+/* Analytics.module.css */
+.container {
+    padding: 24px;
+    color: #e5e7eb;
+}
+
+.header {
+    margin-bottom: 32px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #fff;
+}
+
+.sub {
+    font-size: 14px;
+    color: #9ca3af;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.wideCard,
+.sideCard,
+.fullCard {
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.fullCard {
+    grid-column: span 2;
+}
+
+.cardHeader {
+    margin-bottom: 20px;
+}
+
+.cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 4px 0;
+}
+
+.cardSub {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+.tableWrapper {
+    margin: 0 -24px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+    padding: 12px 24px;
+    background: #1f2937;
+    color: #9ca3af;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid #374151;
+    font-size: 14px;
+}
+
+.topRank {
+    background: #6366f1;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.rank {
+    color: #9ca3af;
+    font-weight: 600;
+}
+
+.titleCell {
+    font-weight: 600;
+    color: #fff;
+}
+
+.tag {
+    background: rgba(107, 114, 128, 0.2);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.downloadCell {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #10b981;
+    font-weight: 700;
+}
+
+.viewBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: 1px solid #374151;
+    color: #9ca3af;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.viewBtn:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+}
+
+.catList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.catInfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.catVal {
+    color: #9ca3af;
+}
+
+.progressBar {
+    height: 6px;
+    background: #374151;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, #6366f1, #818cf8);
+    border-radius: 3px;
+}
+
+.chartArea {
+    padding-top: 20px;
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.chartLabels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.chartCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.bar {
+    width: 24px;
+    background: rgba(99, 102, 241, 0.4);
+    border-radius: 4px 4px 0 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.bar:hover {
+    background: #6366f1;
+    transform: scaleX(1.1);
+}
+
+.dateLbl {
+    font-size: 10px;
+    color: #6b7280;
+}

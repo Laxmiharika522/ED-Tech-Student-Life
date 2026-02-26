@@ -1,0 +1,321 @@
+.title {
+  font-family: var(--font);
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 4px;
+}
+
+.sub {
+  font-size: 0.875rem;
+  color: var(--w60);
+  margin-bottom: 24px;
+}
+
+.summary {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.summaryItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.875rem;
+  color: var(--w60);
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.categorySection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.catIcon {
+  font-size: 1.4rem;
+}
+
+.catTitle {
+  font-family: var(--font);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--white);
+  flex: 1;
+}
+
+.catCount {
+  background: var(--w10);
+  color: var(--w60);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 30px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+.taskCard {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeUp 0.3s ease both;
+  transition: var(--t);
+}
+
+.taskCard:hover {
+  border-color: var(--border-mid);
+}
+
+.cardActive {
+  border-color: var(--purple);
+  background: var(--w5);
+}
+
+.taskTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.taskInfo {
+  flex: 1;
+}
+
+.taskTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.taskDesc {
+  font-size: 0.82rem;
+  color: var(--w60);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.taskMeta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.due {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  color: var(--yellow);
+}
+
+.assignedBy {
+  font-size: 0.78rem;
+  color: var(--w40);
+}
+
+.taskActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+/* Interactive Forms */
+.taskForm {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: fadeUp 0.3s ease both;
+}
+
+.formHeader {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--w80);
+}
+
+.ratingRow {
+  display: flex;
+  gap: 5px;
+}
+
+.star {
+  background: none;
+  border: none;
+  color: var(--w20);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.starActive {
+  color: var(--yellow);
+  transform: scale(1.1);
+}
+
+.formText {
+  background: var(--w5);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--white);
+  font-size: 0.85rem;
+  min-height: 80px;
+  resize: none;
+}
+
+.formSelect,
+.formInput {
+  background: var(--w5);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--white);
+  font-size: 0.85rem;
+}
+
+.formBtns {
+  display: flex;
+  gap: 10px;
+}
+
+.formHint {
+  font-size: 0.75rem;
+  color: var(--w40);
+  margin-bottom: -5px;
+}
+
+/* Ticket / Registration UI */
+.ticketBox {
+  background: var(--w5);
+  border: 1px dashed var(--border-mid);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticketTop {
+  background: var(--purple);
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ticketCat {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--w60);
+  letter-spacing: 1px;
+}
+
+.ticketTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.ticketMain {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.qrMock {
+  width: 60px;
+  height: 60px;
+  background: var(--white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  gap: 2px;
+}
+
+.qrText {
+  font-size: 0.4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.ticketDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.75rem;
+  color: var(--w80);
+  font-weight: 600;
+}
+
+.actionRow {
+  display: flex;
+  gap: 8px;
+}
+
+.actionRow>button {
+  flex: 1;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.empty h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.empty p {
+  color: var(--w60);
+  font-size: 0.875rem;
+  max-width: 300px;
+}

@@ -1,0 +1,203 @@
+/* NoteModeration.module.css */
+.container {
+    padding: 24px;
+    color: #e5e7eb;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #fff;
+}
+
+.sub {
+    font-size: 14px;
+    color: #9ca3af;
+    margin: 0;
+}
+
+.stats {
+    display: flex;
+    gap: 16px;
+}
+
+.statItem {
+    background: #1f2937;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid #374151;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statVal {
+    font-size: 20px;
+    font-weight: 600;
+    color: #818cf8;
+}
+
+.statLbl {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #9ca3af;
+    margin-top: 4px;
+}
+
+.controls {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.searchBar {
+    flex: 1;
+    position: relative;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.searchBar input {
+    width: 100%;
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    padding: 10px 12px 10px 40px;
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.searchBar input:focus {
+    outline: none;
+    border-color: #818cf8;
+    box-shadow: 0 0 0 2px rgba(129, 140, 248, 0.2);
+}
+
+.select {
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    color: #fff;
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+.tableWrapper {
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.table th {
+    text-align: left;
+    padding: 16px;
+    background: #1f2937;
+    color: #9ca3af;
+    font-weight: 600;
+    border-bottom: 1px solid #374151;
+}
+
+.table td {
+    padding: 16px;
+    border-bottom: 1px solid #374151;
+}
+
+.noteInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.noteIcon {
+    width: 36px;
+    height: 36px;
+    background: #374151;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #818cf8;
+}
+
+.noteTitle {
+    font-weight: 600;
+    color: #fff;
+}
+
+.noteSubject {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 99px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.badgeSuccess {
+    background: rgba(52, 211, 153, 0.1);
+    color: #34d399;
+}
+
+.badgeWarning {
+    background: rgba(251, 191, 36, 0.1);
+    color: #fbbf24;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actionBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1f2937;
+    border: 1px solid #374151;
+    color: #9ca3af;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.actionBtn:hover {
+    background: #374151;
+    color: #fff;
+}
+
+.empty {
+    padding: 48px;
+    text-align: center;
+    color: #9ca3af;
+}

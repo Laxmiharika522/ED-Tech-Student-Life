@@ -1,0 +1,277 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.metricsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--purple2);
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.iconBox {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 99px;
+}
+
+.trendUp {
+    background-color: rgba(52, 211, 153, 0.1);
+    color: #34d399;
+}
+
+.trendDown {
+    background-color: rgba(248, 113, 113, 0.1);
+    color: #f87171;
+}
+
+.metricValue {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+}
+
+.metricLabel {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--w40);
+    margin-top: 4px;
+}
+
+.middleRow,
+.bottomRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.sectionTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.quickActions,
+.miniAnalytics,
+.recentActivity,
+.systemLogs {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.actionGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.actionBtn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background-color: var(--w06);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--w60);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.actionBtn:hover {
+    background-color: var(--purple-bg);
+    color: var(--purple2);
+    border-color: var(--purple2);
+}
+
+.actionIcon {
+    color: var(--purple2);
+}
+
+.chartPlaceholder {
+    height: 140px;
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.barPlaceholder {
+    flex: 1;
+    background: linear-gradient(to top, var(--purple1), var(--purple2));
+    border-radius: 4px 4px 0 0;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.barPlaceholder:hover {
+    opacity: 1;
+}
+
+.chartLegend {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    font-size: 0.75rem;
+    color: var(--w40);
+}
+
+.activityList,
+.logList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.activityItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.activityItem:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.activityUser {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.activityAvatar {
+    width: 38px;
+    height: 38px;
+    background-color: var(--w10);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.activityName {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.activityEmail {
+    font-size: 0.75rem;
+    color: var(--w40);
+}
+
+.activityMeta {
+    text-align: right;
+}
+
+.activityTag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--purple2);
+    background: var(--purple-bg);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.activityTime {
+    font-size: 0.7rem;
+    color: var(--w40);
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.logItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logStatus {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.logTitle {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.logTime {
+    font-size: 0.75rem;
+    color: var(--w40);
+}
+
+.viewAllBtn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--w60);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.viewAllBtn:hover {
+    background-color: var(--w06);
+    color: var(--white);
+}
+
+@media (max-width: 1024px) {
+
+    .middleRow,
+    .bottomRow {
+        grid-template-columns: 1fr;
+    }
+}
